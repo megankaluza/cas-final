@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+
+        
+        <!--CSS-->
+    <link rel="stylesheet" media="(min-width:900px)" href="assets/styles.css">
+        <link rel="stylesheet" media="(min-width: 500px) and (max-width: 849px)" href="assets/tablet.css">
+            <link rel="stylesheet" media="(min-width: 1px) and (max-width: 500px)" href="assets/mobile.css">
+                <!--End CSS-->
+                
+                <!--Google Fonts-->
+                <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+                  <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+                    <!--End Google Fonts-->
+                
+    <title>Diamonds Are A Girl's Best Friend</title>
+    
+     <!--Navigation Bar Scripts-->
+    <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+    
+    <!--End Scripts-->
+    
+</head>
+
+<body onLoad="MM_preloadImages('images/diamond_home_rollover.png','images/diamond_about_rollover.png','images/diamond_rollover.png','images/diamond_gallery_rollover.png','images/diamond_follow_rollover.png')">
+
+    
+<div class="centerwrap">
+    <header>
+        <nav>
+            <ul>
+              <li><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Home','','images/diamond_home_rollover.png',1)"><img src="images/diamond_home.png" alt="Home" width="150" height="165" id="Home"></a></li>
+              
+              <li><a href="about.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('About','','images/diamond_about_rollover.png',1)"><img src="images/diamond_about.png" alt="About" width="150" height="165" id="About"></a></li>
+              
+              <li><a href="diamond.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Diamond','','images/diamond_rollover.png',1)"><img src="images/diamond.png" alt="Diamond" width="150" height="165" id="Diamond"></a></li>
+              
+              <li><a href="gallery.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Gallery','','images/diamond_gallery_rollover.png',1)"><img src="images/diamond_gallery.png" alt="Gallery" width="150" height="165" id="Gallery"></a></li>
+              
+              <li><a href="http://megxkae.tumblr.com/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Follow','','images/diamond_follow_rollover.png',1)"><img src="images/diamond_follow.png" alt="Follow" width="150" height="165" id="Follow"></a></li>
+            </ul>
+        
+        </nav>
+    </header>
+
+
+<div class="centerwrap">
+  
+<h1>What's Your Favorite Diamond?</h1>
+
+<hr>
+  
+<!--Form-->
+
+<form id="contact" name="contact" action="contact_process.php" method="post">
+    <table>
+  <tr>
+    <td>Name</td>
+    <td><input type="text" name="name" id="name" required></td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td><input type="email" name="email" id="email" required></td>
+  </tr>
+  <tr>
+    <td>Date</td>
+    <td><input type="date" name="date" id="date"></td>
+  </tr>
+  <tr>
+    <td>Which Diamonds interest you?</td>
+    <td>
+        <select>
+  <option value="White">White Diamonds</option>
+  <option value="Pink">Pink Diamonds</option>
+  <option value="Champagne">Champagne Diamonds</option>
+  <option value="Pink Champagne">Pink Champagne Diamonds</option>
+  <option value="Yellow">Yellow Diamonds</option>
+  <option value="Blue">Blue Diamonds</option>
+  <option value="Green">Green Diamonds</option>
+  <option value="Orange">Orange Diamonds</option>
+  <option value="Purple">Purple Diamonds</option>
+  <option value="Brown">Brown Diamonds</option>
+  <option value="Grey">Grey Diamonds</option>
+  <option value="Simulated">Simulated Diamonds</option>
+  <option value="Synthetic">Synthetic Diamonds</option>
+  <option value="All">All Diamonds</option>
+  
+
+</select>
+        
+
+    </td>
+
+  </tr>
+  <tr>
+    <td>Comments</td>
+    <td><textarea id="comments"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><input type="submit" name="submit" value="Submit"></td>
+  </tr>
+</table>
+</form>
+
+<!--End Form-->
+
+<!--Flash Video-->
+    
+    <p>
+       <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
+  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,16,0"
+  width="320" height="400" >
+  <param name="movie" value="assets/video/sautemouton1.swf">
+  <param name="quality" value="high">
+  <param name="play" value="true">
+  <param name="LOOP" value="true">
+  <embed src="assets/video/sautemouton1.swf"
+       width="320" height="400" play="true" loop="true" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" 
+  type="application/x-shockwave-flash">
+    </embed>
+  </object>
+    </p>
+    
+    <!--End Flash Video-->
+    
+</div>
+
+
+<footer>
+    &copy; Megan Kaluza 2015
+</footer>
+</body>
+</html>
